@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------------------
+// Go berzerk and randomly chase other robots
+// 
+// # Author(s): Conan Reis
+//---------------------------------------------------------------------------------------
+
+() 
+
+  [
+  if entity_class.name = "RoboChar_C"
+    [
+    _wait(@@random.uniform * 2)
+    _boom
+    
+    !player_pawn: GameplayStatics.player_controller(@@world 0).pawn    
+    4._do
+      [
+      // Alternate between chasing player or random robot (including player)
+      _chase(Pawn.instances.any or player_pawn)
+      ]
+    ]  
+  ]  
+  
+

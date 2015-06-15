@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------------------
+// Play sound originating attached to this actor using the optional offset
+// and wait until it has completed.
+// 
+// # Params:
+//   sound: name of sound to play
+//   offset: offset in actor's local space
+//
+// # Examples:
+//   guy._play_sound("/Game/StarterContent/Particles/P_Explosion.P_Explosion")
+//
+// # Author(s): Markus Breyer
+//---------------------------------------------------------------------------------------
+
+( String sound_name,
+  Vector3 offset: Vector3.@@zero
+)
+
+  [
+  !sound: SoundBase.load(sound_name)
+  GameplayStatics.play_sound_at_location(this sound transform.position + offset.rotate_by(transform.rotation) 1.0 1.0 0.0 SoundAttenuation.default)
+  _wait(sound.duration)
+  ]
+  

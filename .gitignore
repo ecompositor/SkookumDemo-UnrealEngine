@@ -1,0 +1,7 @@
+/Binaries/**
+/Intermediate/**
+/DerivedDataCache/**
+/Saved/**
+/Content/SkookumScript/**
+/*.bat
+/*.py
