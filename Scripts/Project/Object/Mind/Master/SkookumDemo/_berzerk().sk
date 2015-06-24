@@ -7,6 +7,6 @@
   [
   _draw_text_at_player("The robots are berzerk!")   
   _wait(1)
-  Pawn.instances%_go_berzerk
+  Enemy.instances%_go_berzerk
   _draw_text_at_player("The robots have calmed down.")
   ]

@@ -5,8 +5,8 @@
 () 
 
   [
-  Actor.named("RoboChar1").teleport_to(Actor.named("TargetPoint1").transform.position RotationAngles!)
-  Actor.named("RoboChar2").teleport_to(Actor.named("TargetPoint2").transform.position RotationAngles!)
-  Actor.named("RoboChar3").teleport_to(Actor.named("TargetPoint3").transform.position RotationAngles!)
+  Actor.named("RoboChar1").teleport_actor("TargetPoint1")
+  Actor.named("RoboChar2").teleport_actor("TargetPoint2")
+  Actor.named("RoboChar3").teleport_actor("TargetPoint3")
   ]
 
