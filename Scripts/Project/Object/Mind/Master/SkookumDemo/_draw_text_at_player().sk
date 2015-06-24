@@ -16,5 +16,5 @@
   Color   color:    Color.@@white
 )
   [ 
-  GameplayStatics.player_pawn(@@world 0)._draw_text(text duration offset color)
+  player_pawn._draw_text(text duration offset color)
   ]
