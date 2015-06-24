@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------------------
+// Go berzerk and randomly chase other robots
+// 
+// # Author(s): Conan Reis
+//---------------------------------------------------------------------------------------
+
+() 
+
+  [
+  _wait(@@random.uniform * 2)
+  _boom
+    
+  !player: Mind.player_pawn
+  4._do
+    [
+    // Alternate between chasing player or random robot (including player)
+    _chase(Pawn.instances.any or player)
+    ]
+  ]  
+  
+
