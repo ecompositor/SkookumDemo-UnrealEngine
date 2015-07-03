@@ -1,0 +1,4 @@
+(Real look_up_rate, Real base_look_up_rate) 
+  [
+  add_controller_pitch_input(look_up_rate * base_look_up_rate * GameplayStatics.world_delta_seconds(@@world))
+  ]
