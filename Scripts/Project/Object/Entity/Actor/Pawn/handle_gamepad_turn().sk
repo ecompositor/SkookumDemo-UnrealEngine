@@ -1,0 +1,4 @@
+(Real turn_rate, Real base_turn_rate) 
+  [
+  add_controller_yaw_input(turn_rate * base_turn_rate * GameplayStatics.world_delta_seconds(@@world))
+  ]
