@@ -7,6 +7,5 @@
   [
   Debug.println("Member: SkookumDemo._startup() - Default starting point for behaviour that takes time to complete.")
   
-  Debug.println("Starting coroutine _berzerk().")
   _berzerk
   ]

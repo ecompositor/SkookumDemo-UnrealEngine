@@ -12,7 +12,7 @@
 //---------------------------------------------------------------------------------------
 
 ( Actor actor
-  Real  acceptance_radius: Real.@@meter * 2
+  Real  acceptance_radius: Real.@@meter * 2.5
 ) 
   [  
   if distance_to(actor) > acceptance_radius

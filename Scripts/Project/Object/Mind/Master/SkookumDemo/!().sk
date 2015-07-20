@@ -7,5 +7,6 @@
   [
   Debug.println("Member: SkookumDemo.!() - Startup mind instance constructor called.")
   Master@!()
+  @sentry?: false
   ]
 
