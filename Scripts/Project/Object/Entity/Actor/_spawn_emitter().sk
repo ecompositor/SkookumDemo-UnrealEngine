@@ -7,7 +7,7 @@
 //
 // # Examples:
 //   actor._spawn_emitter(
-//     "/Game/StarterContent/Particles/P_Explosion.P_Explosion"
+//     "/Game/ScriptLoaded/Particles/P_Explosion.P_Explosion"
 //     Vector3.@@dir_up * Real.@@meter)
 // # See:       World._spawn_emitter_player()
 // # Author(s): Conan Reis
