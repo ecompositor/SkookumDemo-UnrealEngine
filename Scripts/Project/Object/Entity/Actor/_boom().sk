@@ -14,8 +14,8 @@
   
   sync
     [
-    _play_sound("/Game/StarterContent/Audio/Explosion01.Explosion01" offset)
-    _spawn_emitter("/Game/StarterContent/Particles/P_Explosion.P_Explosion" offset)
+    _play_sound("/Game/ScriptLoaded/Audio/Explosion01.Explosion01" offset)
+    _spawn_emitter("/Game/ScriptLoaded/Particles/P_Explosion.P_Explosion" offset)
     // Camera shake with taper off
     //_camera_shake(.4 .7)
     //_camera_shake(.6 .3)

@@ -7,7 +7,7 @@
 //   offset: offset in actor's local space
 //
 // # Examples:
-//   guy._play_sound("/Game/StarterContent/Particles/P_Explosion.P_Explosion")
+//   guy._play_sound("/Game/ScriptLoaded/Particles/P_Explosion.P_Explosion")
 //
 // # Author(s): Markus Breyer
 //---------------------------------------------------------------------------------------

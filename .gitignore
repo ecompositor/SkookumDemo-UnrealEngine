@@ -3,5 +3,7 @@
 /DerivedDataCache/**
 /Saved/**
 /Content/SkookumScript/**
+/Packaged*/**
 /*.bat
 /*.py
+*.log
