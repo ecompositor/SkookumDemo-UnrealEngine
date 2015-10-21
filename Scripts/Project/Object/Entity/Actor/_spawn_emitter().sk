@@ -19,6 +19,6 @@
 
   [
   !vfx: ParticleSystem.load(vfx_name)
-  !vfx_component: GameplayStatics.spawn_emitter_at_location(this vfx transform.position RotationAngles! true)
+  !vfx_component: GameLib.spawn_emitter_at_location(this vfx transform.position RotationAngles! true)
   vfx_component._wait_until_destroyed
   ]

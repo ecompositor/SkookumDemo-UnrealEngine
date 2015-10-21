@@ -15,8 +15,8 @@
 
   [
   _wait
-  CameraShake.default.oscillation_duration_set(duration) // This is a bit hokey - correct way is to create a specific class
-  CameraShake.default.anim_scale_set(scale)
-  GameplayStatics.play_world_camera_shake(@@world CameraShake.static_class transform.position 100 5000 1.0 false)
+  CameraShake.default.@oscillation_duration := duration // This is a bit hokey - correct way is to create a specific class
+  CameraShake.default.@anim_scale := scale
+  GameLib.play_world_camera_shake(@@world CameraShake.static_class transform.position 100 5000 1.0 false)
   _wait(duration)
   ]
