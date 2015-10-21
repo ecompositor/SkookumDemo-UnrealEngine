@@ -1,0 +1,4 @@
+(Real float_value, Boolean is_active?, Vector3 some_vector)
+  [
+  Debug.println(float_value)
+  ]

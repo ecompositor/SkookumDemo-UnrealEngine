@@ -1,0 +1,7 @@
+
+// &raw PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported
+// &raw SkookumScriptComponent !@skookum_script    // Currently unsupported
+&raw CameraComponent    !@follow_camera     // Follow Camera [FollowCamera]
+&raw SpringArmComponent !@camera_boom       // Camera Boom [CameraBoom]
+&raw Real               !@base_turn_rate    // Base Turn Rate [BaseTurnRate]
+&raw Real               !@base_look_up_rate // Base Look Up Rate [BaseLookUpRate]
