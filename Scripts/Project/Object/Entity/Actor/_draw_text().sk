@@ -16,8 +16,8 @@
   Color   color:    Color.@@white
 )
   [
-  !player_controller: GameplayStatics.player_controller(@@world 0)
+  !player_controller: GameLib.player_controller(@@world 0)
   !world_offset: offset.rotate_by(transform.rotation)
-  player_controller.my_hud.add_debug_text(text this duration world_offset world_offset color false false false Font!null 2.0)
+  player_controller.@my_hud.add_debug_text(text this duration world_offset world_offset color false false false Font!null 2.0)
   _wait(duration)
   ]

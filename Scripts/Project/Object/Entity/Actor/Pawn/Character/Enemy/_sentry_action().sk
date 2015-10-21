@@ -6,6 +6,6 @@
 
   [
   println("Member: Enemy._sentry_action()")
-  //branch[_boom]
+  branch[_boom]
   ]
 
