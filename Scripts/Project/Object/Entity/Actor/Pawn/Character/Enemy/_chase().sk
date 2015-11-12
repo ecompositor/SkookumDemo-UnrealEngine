@@ -11,6 +11,7 @@
 
   [
   _path_to_actor(target)
-  target._boom
+  branch [target._boom]
+  _wait(.5)
   ]  
 

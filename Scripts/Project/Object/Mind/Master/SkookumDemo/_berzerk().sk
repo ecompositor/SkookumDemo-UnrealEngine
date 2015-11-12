@@ -5,8 +5,32 @@
 () 
 
   [
-  _draw_text_at_player("The robots are berzerk!")   
-  _wait(1)
-  Enemy.instances%_go_berzerk
-  _draw_text_at_player("The robots have calmed down.")
+  loop
+    [
+    // Robots go berzerk when berzerk effect entered
+    Volume.named("TriggerBerzerk")._on_begin_overlap_do_until[true]
+    
+    Emitter.named("BerzerkEmitter").deactivate
+    branch [player_pawn._boom]
+    branch
+      [
+      _wait(.75)
+      _draw_text_at_player("The robots are berzerk!")
+      ]
+    
+    race
+      [
+      // All enemy robots chase random targets forever
+      Enemy.instances%_go_berzerk
+        
+      // Stop when berzerk off effect entered
+      Volume.named("TriggerBerzerkOff")._on_begin_overlap_do_until[true]      
+      ]
+    
+    Enemy.instances%path_stop
+    Emitter.named("BerzerkEmitter").activate
+    branch [player_pawn._boom]
+    _wait(.75)
+    _draw_text_at_player("The robots have calmed down.")
+    ]
   ]

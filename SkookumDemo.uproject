@@ -1,6 +1,10 @@
 {
 	"FileVersion": 3,
 	"EngineAssociation": "",
-	"Category": "",
-	"Description": ""
+	"Category": "SkookumScript",
+	"Description": "Skookum Demo - simple game level and behaviors to show off the power of the SkookumScript programming language.",
+	"TargetPlatforms": [
+		"WindowsNoEditor,
+    IOS"
+	]
 }
